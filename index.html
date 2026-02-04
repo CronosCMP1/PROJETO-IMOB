@@ -12,6 +12,17 @@
     <meta name="theme-color" content="#0f172a">
     <link rel="manifest" href="/manifest.json">
     
+    <!-- Environment Shim for Browser -->
+    <script>
+      // CRITICAL FIX: Defines 'process' to prevent crashes in libraries that expect a Node.js environment
+      window.process = window.process || {
+        env: {
+          NODE_ENV: 'production',
+          API_KEY: '' // This placeholder prevents 'undefined' access errors
+        }
+      };
+    </script>
+    
     <!-- Styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">

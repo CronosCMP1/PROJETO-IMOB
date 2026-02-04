@@ -1,0 +1,5 @@
+{
+  "name": "PropHunter AI - Rastreador FSBO",
+  "description": "Um dashboard SaaS que simula a raspagem de portais imobiliários para identificar anúncios 'Direto com Proprietário' (FSBO) usando análise de padrões com IA.",
+  "requestFramePermissions": []
+}
